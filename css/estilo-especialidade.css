@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(#003366, #006699);
+}
+
+div.logo {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+div.usuario {
+    font-size: 14px;
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+input,
+select {
+    border-radius: 4px;
+    border: 1px solid black;
+    height: 2em;
+}
+
+/*Nav Bar */
+nav {
+    background-color: #383838;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li,
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+@media screen and (min-width: 200px) and (max-width: 840px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #cccccc;
+    color: #383838;
+}
+
+nav ul li.abaAtual a,
+nav ul li.abaAtual a:hover{
+    background-color: #cccccc;
+    color: #383838;
+}
+
+
+/* Tabela */
+table {
+            width: 100%;
+        }
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    padding: 10px;
+    background-color: #534d4d;
+    text-align: center;
+    color: #fff;
+}
+#tbEspecialidades{
+    box-shadow: 10px 5px 5px  rgb(89, 88, 88);
+    width: 80%;
+    margin-left: 120px;
+    border-radius: 10px;
+}
+tr:hover{
+    background: rgb(59, 57, 57);
+    color: #fff
+}
+thead:hover{
+    background: rgb(59, 57, 57);
+    color: #070707
+}
