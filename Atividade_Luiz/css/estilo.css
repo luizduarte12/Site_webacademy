@@ -64,7 +64,9 @@ input[type="button"]:hover {
     background-color: rgb(102, 21, 21);
 }
 
-
+a.oculto {
+    display: none;
+}
 
 /* Nav */
 nav {
