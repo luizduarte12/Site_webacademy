@@ -110,12 +110,16 @@ let form = document.querySelector('form');
 
 let botaoCancelar = document.querySelector('input#vermelho');
 
+
+
 botaoAdicionar.addEventListener('click', () => {
     form.classList.remove('inativo');
+    botaoAdicionar.classList.add('oculto');
 });
 
 botaoCancelar.addEventListener('click', () =>{
     form.classList.add('inativo');
+    botaoAdicionar.classList.remove('oculto');
     form.reset();
 });
 
@@ -136,6 +140,7 @@ form.addEventListener('submit', (evento) =>{
     inserirProfissional(profissional);
     form.reset();
     form.classList.add('inativo');
+    botaoAdicionar.classList.remove('oculto');
     eventoExcluir();
 
 });
