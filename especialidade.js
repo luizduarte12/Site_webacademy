@@ -57,3 +57,13 @@ carregarProfissionais = () => {
 
 carregarProfissionais();
 
+
+let botaoAdicionar = document.querySelector('a.botao#add');
+let form = document.querySelector('form');
+
+botaoAdicionar.addEventListener('click', () => {
+    form.classList.remove('inativo');
+});
+
+
+
