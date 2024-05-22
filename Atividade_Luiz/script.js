@@ -157,7 +157,9 @@ const inserirProfissional = (item) => {
         let acoes = document.createElement('td');
 
         id.textContent = item.id;
-        nome.textContent = item.nome;
+        //nome.textContent = item.nome;
+        nome.innerHTML = `<a class="botao" href="javascript:void(0)">Editar</a> <a id="vermelho" class="botao"
+                        href="javascript:void(0)">Excluir</a>`
         registro.textContent = item.registro;
         telefone.textContent = item.telefone;
         email.textContent = item.email;
@@ -175,8 +177,6 @@ const inserirProfissional = (item) => {
         linha.appendChild(acoes);
 
         tabela.tBodies[0].appendChild(linha);
-        atualizarTotalProfissionais();
-    
 };
 
 const atualizarTotalProfissionais = () => {
