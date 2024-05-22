@@ -184,3 +184,10 @@ a.botao#vermelho:hover,
 input[type="button"]:hover {
     background-color: rgb(102, 21, 21);
 }
+
+footer, span a{
+    text-align: center;
+    background: #003366;
+    color: white;
+    line-height: 2em;  
+}
