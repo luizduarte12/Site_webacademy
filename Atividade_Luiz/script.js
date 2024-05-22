@@ -175,8 +175,15 @@ const inserirProfissional = (item) => {
         linha.appendChild(acoes);
 
         tabela.tBodies[0].appendChild(linha);
-
+        atualizarTotalProfissionais();
+    
 };
+
+const atualizarTotalProfissionais = () => {
+    let totalProfissionais = tabela.tBodies[0].rows.length;
+    document.querySelector('#total-profissionais').textContent = totalProfissionais;
+};
+
 
 
 
