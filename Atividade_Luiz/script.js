@@ -100,6 +100,7 @@ const eventoExcluir= () =>{
     for (const bt of botoes){
         bt.addEventListener('click', () =>{
             bt.parentNode.parentNode.remove();
+            atualizarTotalProfissionais();
         });
     };
 };
@@ -142,6 +143,7 @@ form.addEventListener('submit', (evento) =>{
     form.classList.add('inativo');
     botaoAdicionar.classList.remove('oculto');
     eventoExcluir();
+    atualizarTotalProfissionais();
 
 });
 
@@ -177,6 +179,7 @@ const inserirProfissional = (item) => {
         linha.appendChild(acoes);
 
         tabela.tBodies[0].appendChild(linha);
+        atualizarTotalProfissionais();
 };
 
 const atualizarTotalProfissionais = () => {
