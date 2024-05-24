@@ -172,7 +172,7 @@ const inserirProfissional = (item) => {
 
 //Atividade 2------------------------
 const esconderAdicionar = () =>{
-    let botaoAdd = document.getElementById("add");
+    let botaoAdd = document.getElementById("add ");
     botaoAdd.style.display = "none"
 }
 //------------------------------------
